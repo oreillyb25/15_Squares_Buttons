@@ -2,8 +2,8 @@ package com.example.a15_squares_buttons;
 
 import android.widget.Button;
 
-import java.util.ArrayList;
-
+//import java.util.ArrayList;
+//author: brigid o'reilly
 public class PuzzleModel {
 /*game plan:
 double int array for the sixteen squares

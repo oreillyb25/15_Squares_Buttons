@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
-
+//author: brigid o'reilly
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         Button r = findViewById(R.id.create);
         r.setOnClickListener(pc);
 
+        //button array: i couldnt figure out how to get both in an array
         pm.buttons[0][0] = findViewById(R.id.button);
         pm.buttons[0][0].setOnClickListener(pc);
         pm.buttons[0][1] = findViewById(R.id.button2);

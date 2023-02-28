@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+//author: brigid o'reilly
+
 public class PuzzleView {
     private PuzzleModel pm = new PuzzleModel();
     public PuzzleModel getPuzzleModel(){
@@ -19,10 +21,12 @@ public class PuzzleView {
      */
 
     public void drawGrid(){
+        //name is from my initial try of paint objects not buttons
         for(int i = 0; i < 16; i++){
             pm.shuf[i] = i + 1;
         }
         List<Integer> shuffle = Arrays.asList(pm.shuf);
+        //wouldnt work if i started in a list
         Collections.shuffle(shuffle);
         shuffle.toArray(pm.shuf);
 
@@ -38,6 +42,7 @@ public class PuzzleView {
             for(int j = 0; j < 4; j++){
                 pm.buttons[i][j].setText(pm.arr[i][j] + "");
                 pm.buttons[i][j].setBackgroundColor(Color.RED);
+                //red is the default
                 pm.buttons[i][j].setClickable(true);
                 pm.buttons[i][j].setVisibility(View.VISIBLE);
 

@@ -1,7 +1,7 @@
 package com.example.a15_squares_buttons;
 
 import android.view.View;
-
+//author: brigid o'reilly
 public class PuzzleController implements View.OnClickListener{
 
     private PuzzleModel pm;
@@ -13,6 +13,7 @@ public class PuzzleController implements View.OnClickListener{
     }
 
     public void onClick(View view){
+        //reset button
         if(view.getId() == R.id.create){
             pv.drawGrid();
         }
@@ -27,6 +28,8 @@ public class PuzzleController implements View.OnClickListener{
                     }
                 }
             }
+            //bounds checking
+            //else if chain did not work bc it would not enter row!=0 if row!=3 was true etc
             if(row != 3){
                 if(pm.arr[row+1][col] == 16){
                     pv.move(row, col, row+1, col);
